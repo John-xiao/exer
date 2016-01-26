@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23C42924F1E35AECC2B3FD76 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D8646E58C3DCA013D00E8E /* libPods.a */; };
 		EA70F0D11C571ED5005069EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70F0D01C571ED5005069EB /* main.m */; };
 		EA70F0D41C571ED5005069EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70F0D31C571ED5005069EB /* AppDelegate.m */; };
 		EA70F0D71C571ED5005069EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70F0D61C571ED5005069EB /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61D8646E58C3DCA013D00E8E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41FAF7AF2C3E24F682279AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B3D1C8C65083BD0477F1EBAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EA70F0CC1C571ED5005069EB /* exer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA70F0D01C571ED5005069EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA70F0D21C571ED5005069EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23C42924F1E35AECC2B3FD76 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C4ACD3BAB8BE25237A5FDF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61D8646E58C3DCA013D00E8E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82DB45426125C1F7D9DE2E5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A41FAF7AF2C3E24F682279AC /* Pods.debug.xcconfig */,
+				B3D1C8C65083BD0477F1EBAD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EA70F0C31C571ED5005069EB = {
 			isa = PBXGroup;
 			children = (
 				EA70F0CE1C571ED5005069EB /* exer */,
 				EA70F0CD1C571ED5005069EB /* Products */,
+				82DB45426125C1F7D9DE2E5F /* Pods */,
+				6C4ACD3BAB8BE25237A5FDF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA70F0E31C571ED5005069EB /* Build configuration list for PBXNativeTarget "exer" */;
 			buildPhases = (
+				269D6190E9A3E3BF46D3D9AB /* Check Pods Manifest.lock */,
 				EA70F0C81C571ED5005069EB /* Sources */,
 				EA70F0C91C571ED5005069EB /* Frameworks */,
 				EA70F0CA1C571ED5005069EB /* Resources */,
+				2E9D4E7CFCE6E1ABFAC8D492 /* Embed Pods Frameworks */,
+				08C7951C75FD53BCCFBB3D6C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08C7951C75FD53BCCFBB3D6C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		269D6190E9A3E3BF46D3D9AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2E9D4E7CFCE6E1ABFAC8D492 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA70F0C81C571ED5005069EB /* Sources */ = {
@@ -259,9 +334,11 @@
 		};
 		EA70F0E41C571ED5005069EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A41FAF7AF2C3E24F682279AC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = exer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ora.com.exer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +347,11 @@
 		};
 		EA70F0E51C571ED5005069EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3D1C8C65083BD0477F1EBAD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = exer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ora.com.exer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +377,7 @@
 				EA70F0E51C571ED5005069EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
