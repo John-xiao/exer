@@ -10,4 +10,13 @@
 
 @interface BaseViewController : UIViewController
 
+//显示/隐藏导航
+- (void)hideNavigationBar;
+- (void)showNavigationBar;
+
+//显示/隐藏状态栏
+- (void)showStatusBar;
+- (void)hideStatusBar;
+
+
 @end
