@@ -11,5 +11,6 @@
 
 #import "Categories.h"
 #import "CustomController.h"
+#import "UtilsMacro.h"
 
 #endif /* CustomFramework_h */
