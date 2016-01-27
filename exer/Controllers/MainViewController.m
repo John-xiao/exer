@@ -58,7 +58,6 @@
 }
 
 #pragma mark TableView DataSource
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.viewModel.demos.count;
 }
