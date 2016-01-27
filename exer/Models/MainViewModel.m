@@ -21,5 +21,6 @@
     NSString * path = [[NSBundle mainBundle] pathForResource:@"DataSource" ofType:@"plist"];
     NSDictionary * data = [NSDictionary dictionaryWithContentsOfFile:path];
     NSArray * demoArray = [data getObjectByPath:@"mainview/data"];
+    [self.demos setArray:[MainMenuModel mj_objectArrayWithKeyValuesArray:demoArray]];
 }
 @end

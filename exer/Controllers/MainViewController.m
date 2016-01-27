@@ -7,8 +7,9 @@
 //
 
 #import "MainViewController.h"
+#import "MainViewCell.h"
 
-@interface MainViewController ()
+@interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
 
@@ -24,16 +25,28 @@
 
 -(UITableView *)tableView{
     if (!_tableView) {
-        
+        // Init TableView
+        _tableView = ({
+            UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+            tableView.backgroundColor = [UIColor clearColor];
+//            tableView.rowHeight = 0;
+            tableView.delegate = self;
+            tableView.dataSource = self;
+            tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+            [tableView registerClass:[MainViewCell class] forCellReuseIdentifier:CELL_ID_MAINVIEW];
+            tableView;
+        });
     }
     return _tableView;
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self hideNavigationBar];
-    
+    [self setupViews];
     [self.viewModel loadData];
+    [self.tableView reloadData];
     // Do any additional setup after loading the view.
 }
 
@@ -43,7 +56,33 @@
 }
 
 -(void)setupViews{
-    
+    [self.view addSubview:self.tableView];
+}
+
+#pragma mark TableView DataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.viewModel.demos.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID_MAINVIEW forIndexPath:indexPath];
+    [self configureCell:(MainViewCell *)cell atIndexPath:indexPath];
+    return cell;
+}
+
+- (void)configureCell:(MainViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    MainMenuModel *data = self.viewModel.demos[indexPath.row];
+    [cell.name setText:data.name];
+    [cell.icon setImage:[UIImage imageNamed:data.image]];
+}
+
+#pragma mark TableView Delegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 80;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 /*

@@ -61,6 +61,7 @@
 		EA818FC61C5869850084FB3E /* 56@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA818F9D1C5869850084FB3E /* 56@2x.png */; };
 		EA818FC71C5869850084FB3E /* 57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA818F9E1C5869850084FB3E /* 57@2x.png */; };
 		EA818FC81C5869850084FB3E /* 58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA818F9F1C5869850084FB3E /* 58@2x.png */; };
+		EA818FCB1C588F630084FB3E /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA818FCA1C588F630084FB3E /* MainViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +136,9 @@
 		EA818F9D1C5869850084FB3E /* 56@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "56@2x.png"; sourceTree = "<group>"; };
 		EA818F9E1C5869850084FB3E /* 57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "57@2x.png"; sourceTree = "<group>"; };
 		EA818F9F1C5869850084FB3E /* 58@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "58@2x.png"; sourceTree = "<group>"; };
+		EA818FC91C588F630084FB3E /* MainViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewCell.h; sourceTree = "<group>"; };
+		EA818FCA1C588F630084FB3E /* MainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewCell.m; sourceTree = "<group>"; };
+		EA818FCD1C58935C0084FB3E /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +227,8 @@
 		EA815A281C5762080084FB3E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EA818FC91C588F630084FB3E /* MainViewCell.h */,
+				EA818FCA1C588F630084FB3E /* MainViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				EA815AEE1C5867200084FB3E /* CustomFramework.h */,
+				EA818FCC1C5893440084FB3E /* Constants */,
 				EA815A901C585ECB0084FB3E /* Categories */,
 				EA815A2C1C5762270084FB3E /* Controllers */,
 			);
@@ -336,6 +343,14 @@
 				EA818F9F1C5869850084FB3E /* 58@2x.png */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		EA818FCC1C5893440084FB3E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EA818FCD1C58935C0084FB3E /* UtilsMacro.h */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -503,6 +518,7 @@
 				EA815A971C585EE10084FB3E /* NSMutableDictionary+Extension.m in Sources */,
 				EA815A321C5762270084FB3E /* BaseViewController.m in Sources */,
 				EA815A351C5853190084FB3E /* MainMenuModel.m in Sources */,
+				EA818FCB1C588F630084FB3E /* MainViewCell.m in Sources */,
 				EA815A961C585EE10084FB3E /* NSDictionary+Extension.m in Sources */,
 				EA815A381C5853A20084FB3E /* MainViewModel.m in Sources */,
 				EA70F0D41C571ED5005069EB /* AppDelegate.m in Sources */,

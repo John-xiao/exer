@@ -9,9 +9,29 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#ifdef __OBJC__
+
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+//系统库
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+//PODS
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/UIKit+AFNetworking.h>
+#import <FMDB/FMDB.h>
+#import <libextobjc/extobjc.h>
+#import <Masonry/Masonry.h>
+#import <MJExtension/MJExtension.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+
+
+//自定义framework
 #import "CustomFramework.h"
+
+#endif
 
 #endif /* PrefixHeader_pch */
