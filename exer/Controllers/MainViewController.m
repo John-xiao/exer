@@ -26,17 +26,16 @@
 - (UITableView *)tableView {
     if (!_tableView) {
         // Init TableView
-        _tableView = ({
-            UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-            tableView.backgroundColor = [UIColor clearColor];
-            //            tableView.rowHeight = 0;
-            tableView.delegate = self;
-            tableView.dataSource = self;
-            tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-            [tableView registerClass:[MainViewCell class] forCellReuseIdentifier:CELL_ID_MAINVIEW];
-            tableView;
-        });
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.showsHorizontalScrollIndicator = NO;
+        _tableView.showsVerticalScrollIndicator = NO;
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.backgroundColor = [UIColor clearColor];
+        [_tableView registerClass:[MainViewCell class] forCellReuseIdentifier:CELL_ID_MAINVIEW];
     }
+
     return _tableView;
 }
 
