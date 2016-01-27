@@ -6,8 +6,8 @@
 //  Copyright © 2016年 ORA. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "MainViewModel.h"
 
 @interface MainViewController : BaseViewController
-
+@property (nonatomic,strong) MainViewModel *viewModel;
 @end

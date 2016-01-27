@@ -10,19 +10,40 @@
 
 @interface MainViewController ()
 
+@property (nonatomic,strong) UITableView *tableView;
+
 @end
 
 @implementation MainViewController
+-(MainViewModel *)viewModel{
+    if (!_viewModel) {
+        _viewModel = [[MainViewModel alloc] init];
+    }
+    return _viewModel;
+}
+
+-(UITableView *)tableView{
+    if (!_tableView) {
+        
+    }
+    return _tableView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self hideNavigationBar];
+    
+    [self.viewModel loadData];
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)setupViews{
+    
 }
 
 /*
