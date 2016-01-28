@@ -159,8 +159,10 @@ typedef enum { kup = 1, kdown, kright, kleft, kzoomin, kzoomout } btntag;
     //    self.moveView.center = center;
     //    [UIView setAnimationDuration:2.0];
     //    [UIView commitAnimations];
+    @weakify(self);
     [UIView animateWithDuration:0.5
                      animations:^{
+                       @strongify(self);
                        self.moveView.transform = transform;
                      }];
 }
@@ -178,9 +180,10 @@ typedef enum { kup = 1, kdown, kright, kleft, kzoomin, kzoomout } btntag;
         default:
             break;
     }
-
+    @weakify(self);
     [UIView animateWithDuration:0.5
                      animations:^{
+                       @strongify(self);
                        self.moveView.transform = transform;
                      }];
 }
