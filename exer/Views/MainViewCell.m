@@ -40,7 +40,7 @@
     [self.name mas_makeConstraints:^(MASConstraintMaker *make) {
       make.centerY.equalTo(self.contentView);
       make.left.equalTo(self.icon.mas_right).with.mas_offset(10);
-      make.right.equalTo(self.contentView).with.mas_offset(10);
+      make.right.equalTo(self.contentView).with.mas_offset(-10);
       make.top.equalTo(self.contentView).with.mas_offset(10);
       make.bottom.equalTo(self.contentView).with.mas_offset(-10);
     }];
