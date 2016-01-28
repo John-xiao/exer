@@ -8,6 +8,7 @@
 
 #import "MainViewCell.h"
 #import "MainViewController.h"
+#import "Demo1ButtonViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -41,11 +42,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self hideNavigationBar];
-    [self setupViews];
+    [self setupView];
     [self.viewModel loadData];
     [self.tableView reloadData];
     // Do any additional setup after loading the view.
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self hideNavigationBar];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,7 +59,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setupViews {
+- (void)setupView {
     [self.view addSubview:self.tableView];
 }
 
@@ -81,6 +87,17 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    MainMenuModel *data = self.viewModel.demos[indexPath.row];
+    switch (indexPath.row) {
+        case 0:
+        {
+            Demo1ButtonViewController * demo1VC = [[Demo1ButtonViewController alloc] init];
+            [self.navigationController pushViewController:demo1VC animated:YES];
+        }
+        break;
+        default:
+            break;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView

@@ -12,13 +12,13 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.backgroundColor = [UIColor blackColor];
-        [self setupViews];
+        self.backgroundColor = [UIColor grayColor];
+        [self setupView];
     }
     return self;
 }
 
-- (void)setupViews {
+- (void)setupView {
     self.icon = [[UIImageView alloc] init];
     self.icon.backgroundColor = [UIColor greenColor];
     self.icon.contentMode = UIViewContentModeScaleToFill;

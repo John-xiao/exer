@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23C42924F1E35AECC2B3FD76 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D8646E58C3DCA013D00E8E /* libPods.a */; };
+		EA199E2E1C59C04E002CE615 /* Demo1ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E2D1C59C04E002CE615 /* Demo1ButtonViewController.m */; };
 		EA70F0D11C571ED5005069EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70F0D01C571ED5005069EB /* main.m */; };
 		EA70F0D41C571ED5005069EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70F0D31C571ED5005069EB /* AppDelegate.m */; };
 		EA70F0DC1C571ED5005069EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA70F0DB1C571ED5005069EB /* Assets.xcassets */; };
@@ -68,6 +69,8 @@
 		61D8646E58C3DCA013D00E8E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41FAF7AF2C3E24F682279AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B3D1C8C65083BD0477F1EBAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EA199E2C1C59C04E002CE615 /* Demo1ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ButtonViewController.h; sourceTree = "<group>"; };
+		EA199E2D1C59C04E002CE615 /* Demo1ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ButtonViewController.m; sourceTree = "<group>"; };
 		EA70F0CC1C571ED5005069EB /* exer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA70F0D01C571ED5005069EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA70F0D21C571ED5005069EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -220,6 +223,8 @@
 			children = (
 				EA815A261C5762080084FB3E /* MainViewController.h */,
 				EA815A271C5762080084FB3E /* MainViewController.m */,
+				EA199E2C1C59C04E002CE615 /* Demo1ButtonViewController.h */,
+				EA199E2D1C59C04E002CE615 /* Demo1ButtonViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -519,6 +524,7 @@
 				EA815A321C5762270084FB3E /* BaseViewController.m in Sources */,
 				EA815A351C5853190084FB3E /* MainMenuModel.m in Sources */,
 				EA818FCB1C588F630084FB3E /* MainViewCell.m in Sources */,
+				EA199E2E1C59C04E002CE615 /* Demo1ButtonViewController.m in Sources */,
 				EA815A961C585EE10084FB3E /* NSDictionary+Extension.m in Sources */,
 				EA815A381C5853A20084FB3E /* MainViewModel.m in Sources */,
 				EA70F0D41C571ED5005069EB /* AppDelegate.m in Sources */,
