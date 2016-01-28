@@ -87,7 +87,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    MainMenuModel *data = self.viewModel.demos[indexPath.row];
+//    MainMenuModel *data = self.viewModel.demos[indexPath.row];
     switch (indexPath.row) {
         case 0:
         {
