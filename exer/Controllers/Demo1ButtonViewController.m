@@ -26,7 +26,7 @@ typedef enum { kup = 1, kdown, kright, kleft, kzoomin, kzoomout } btntag;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self showNavigationBar];
+//    [self showNavigationBar];
     [self setupView];
     // Do any additional setup after loading the view.
 }

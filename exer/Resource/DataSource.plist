@@ -16,9 +16,52 @@
 				<key>image</key>
 				<string>01</string>
 				<key>name</key>
-				<string>demo2</string>
+				<string>demo2SimpleImageBrowser</string>
 			</dict>
 		</array>
 	</dict>
+    <key>Demo2ImageBorwser</key>
+    <dict>
+        <key>data</key>
+        <array>
+            <dict>
+                <key>image</key>
+                <string>00</string>
+                <key>name</key>
+                <string>image00</string>
+            </dict>
+            <dict>
+                <key>image</key>
+                <string>01</string>
+                <key>name</key>
+                <string>image01</string>
+            </dict>
+            <dict>
+                <key>image</key>
+                <string>02</string>
+                <key>name</key>
+                <string>image02</string>
+            </dict>
+            <dict>
+                <key>image</key>
+                <string>03</string>
+                <key>name</key>
+                <string>image03</string>
+            </dict>
+            <dict>
+                <key>image</key>
+                <string>04</string>
+                <key>name</key>
+                <string>image04</string>
+            </dict>
+            <dict>
+                <key>image</key>
+                <string>05</string>
+                <key>name</key>
+                <string>image05</string>
+            </dict>
+        </array>
+    </dict>
+
 </dict>
 </plist>
