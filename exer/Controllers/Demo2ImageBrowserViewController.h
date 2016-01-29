@@ -7,7 +7,7 @@
 //
 
 #import "BaseViewController.h"
-
+#import "ImageBrowserViewModel.h"
 @interface Demo2ImageBrowserViewController : BaseViewController
-
+@property (nonatomic,strong) ImageBrowserViewModel *viewModel;
 @end

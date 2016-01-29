@@ -6,9 +6,10 @@
 //  Copyright © 2016年 ORA. All rights reserved.
 //
 
+#import "Demo1ButtonViewController.h"
+#import "Demo2ImageBrowserViewController.h"
 #import "MainViewCell.h"
 #import "MainViewController.h"
-#import "Demo1ButtonViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -87,14 +88,16 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    MainMenuModel *data = self.viewModel.demos[indexPath.row];
+    //    MainMenuModel *data = self.viewModel.demos[indexPath.row];
     switch (indexPath.row) {
-        case 0:
-        {
-            Demo1ButtonViewController * demo1VC = [[Demo1ButtonViewController alloc] init];
+        case 0: {
+            Demo1ButtonViewController *demo1VC = [[Demo1ButtonViewController alloc] init];
             [self.navigationController pushViewController:demo1VC animated:YES];
-        }
-        break;
+        } break;
+        case 1: {
+            Demo2ImageBrowserViewController *demo2VC= [[Demo2ImageBrowserViewController alloc] init];
+            [self.navigationController pushViewController:demo2VC animated:YES];
+        } break;
         default:
             break;
     }

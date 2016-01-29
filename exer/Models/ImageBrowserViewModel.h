@@ -12,4 +12,9 @@
 @property(nonatomic, strong) NSMutableArray *imageArray;
 
 - (void)loadData;
+- (void)previous;
+- (void)next;
+- (NSString *)getIndexString;
+- (NSString *)getDescString;
+- (UIImage *)getCurrentImage;
 @end
