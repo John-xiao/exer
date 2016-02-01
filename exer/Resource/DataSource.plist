@@ -18,6 +18,12 @@
 				<key>name</key>
 				<string>demo2SimpleImageBrowser</string>
 			</dict>
+            <dict>
+                <key>image</key>
+                <string>02</string>
+                <key>name</key>
+                <string>demo3ScrollviewZoom</string>
+            </dict>
 		</array>
 	</dict>
     <key>Demo2ImageBorwser</key>

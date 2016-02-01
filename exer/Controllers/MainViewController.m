@@ -8,6 +8,7 @@
 
 #import "Demo1ButtonViewController.h"
 #import "Demo2ImageBrowserViewController.h"
+#import "Demo3ScrollviewZoomViewController.h"
 #import "MainViewCell.h"
 #import "MainViewController.h"
 
@@ -91,12 +92,16 @@
     //    MainMenuModel *data = self.viewModel.demos[indexPath.row];
     switch (indexPath.row) {
         case 0: {
-            Demo1ButtonViewController *demo1VC = [[Demo1ButtonViewController alloc] init];
-            [self.navigationController pushViewController:demo1VC animated:YES];
+            Demo1ButtonViewController *VC = [[Demo1ButtonViewController alloc] init];
+            [self.navigationController pushViewController:VC animated:YES];
         } break;
         case 1: {
-            Demo2ImageBrowserViewController *demo2VC= [[Demo2ImageBrowserViewController alloc] init];
-            [self.navigationController pushViewController:demo2VC animated:YES];
+            Demo2ImageBrowserViewController *VC= [[Demo2ImageBrowserViewController alloc] init];
+            [self.navigationController pushViewController:VC animated:YES];
+        } break;
+        case 2: {
+            Demo3ScrollviewZoomViewController *VC= [[Demo3ScrollviewZoomViewController alloc] init];
+            [self.navigationController pushViewController:VC animated:YES];
         } break;
         default:
             break;
