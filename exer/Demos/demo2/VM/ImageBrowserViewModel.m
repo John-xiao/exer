@@ -13,8 +13,7 @@
 @end
 
 @implementation ImageBrowserViewModel
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         self.currentIndex = 0;
@@ -29,6 +28,18 @@
     return _imageArray;
 }
 
+- (NSMutableArray *)animationImageArray {
+    if (!_animationImageArray) {
+        _animationImageArray = [[NSMutableArray alloc] init];
+        for (int i = 0; i < 10; i++) {
+            NSString *name = [NSString stringWithFormat:@"0%d", i];
+            UIImage *image = [UIImage imageNamed:name];
+            [_animationImageArray addObject:image];
+        }
+    }
+    return _animationImageArray;
+}
+
 - (void)loadData {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"DataSource" ofType:@"plist"];
     NSDictionary *data = [NSDictionary dictionaryWithContentsOfFile:path];
@@ -36,13 +47,13 @@
     [self.imageArray setArray:[ImageBrowserModel mj_objectArrayWithKeyValuesArray:demoArray]];
 }
 
-- (void)previous{
+- (void)previous {
     if (self.currentIndex > 0) {
         self.currentIndex--;
     }
 }
 
-- (void)next{
+- (void)next {
     if (self.currentIndex < (self.imageArray.count - 1)) {
         self.currentIndex++;
     }
@@ -52,12 +63,12 @@
     return [NSString stringWithFormat:@"%ld/%lu", (long)(self.currentIndex + 1), self.imageArray.count];
 }
 
--(NSString *)getDescString{
+- (NSString *)getDescString {
     return ((ImageBrowserModel *)self.imageArray[self.currentIndex]).name;
 }
 
--(UIImage *)getCurrentImage{
-    NSString * imageName = ((ImageBrowserModel *)self.imageArray[self.currentIndex]).image;
+- (UIImage *)getCurrentImage {
+    NSString *imageName = ((ImageBrowserModel *)self.imageArray[self.currentIndex]).image;
     return [UIImage imageNamed:imageName];
 }
 @end

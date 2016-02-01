@@ -10,6 +10,7 @@
 
 @interface ImageBrowserViewModel : NSObject
 @property(nonatomic, strong) NSMutableArray *imageArray;
+@property(nonatomic, strong) NSMutableArray *animationImageArray;
 
 - (void)loadData;
 - (void)previous;

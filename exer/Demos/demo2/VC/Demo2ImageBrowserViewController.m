@@ -10,13 +10,14 @@
 
 @interface Demo2ImageBrowserViewController ()
 @property(nonatomic, strong) UIImageView *displayView;
+@property (nonatomic,strong) UIImageView *animationView;
 @property(nonatomic, strong) UILabel *indexLable;
 @property(nonatomic, strong) UILabel *descLable;
 @end
 
 @implementation Demo2ImageBrowserViewController
 
-typedef enum { kPrevious = 0, kNext } btnTag;
+typedef enum { kPrevious = 0, kNext, kPlay } btnTag;
 
 - (ImageBrowserViewModel *)viewModel {
     if (!_viewModel) {
@@ -31,6 +32,14 @@ typedef enum { kPrevious = 0, kNext } btnTag;
         _displayView.backgroundColor = [UIColor orangeColor];
     }
     return _displayView;
+}
+
+- (UIImageView *)animationView {
+    if (!_animationView) {
+        _animationView = [[UIImageView alloc] init];
+        _animationView.backgroundColor = [UIColor orangeColor];
+    }
+    return _animationView;
 }
 
 - (UILabel *)indexLable {
@@ -108,6 +117,27 @@ typedef enum { kPrevious = 0, kNext } btnTag;
       make.centerX.mas_equalTo(self.view.mas_centerX);
       make.height.mas_equalTo(40);
     }];
+    
+    UIButton *playBtn = [[UIButton alloc] init];
+    [playBtn setTitle:@"Play" forState:UIControlStateNormal];
+    playBtn.backgroundColor = [UIColor grayColor];
+    [playBtn setTag:kPlay];
+    
+    [playBtn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:playBtn];
+    [playBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.descLable.mas_bottom).mas_offset(10);
+        make.centerX.mas_equalTo(self.descLable.mas_centerX);
+        make.size.mas_equalTo(CGSizeMake(60, 40));
+    }];
+    
+    [self.view addSubview:self.animationView];
+    [self.animationView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(playBtn.mas_bottom).mas_offset(10);
+        make.centerX.mas_equalTo(playBtn.mas_centerX);
+        make.size.mas_equalTo(CGSizeMake(200, 200));
+    }];
 }
 
 - (void)loadViewData {
@@ -125,6 +155,12 @@ typedef enum { kPrevious = 0, kNext } btnTag;
         case kNext:
             [self.viewModel next];
             [self loadViewData];
+            break;
+        case kPlay:
+            [self.animationView setAnimationImages:self.viewModel.animationImageArray];
+            [self.animationView setAnimationRepeatCount:1];
+            [self.animationView setAnimationDuration:4];
+            [self.animationView startAnimating];
             break;
         default:
             break;

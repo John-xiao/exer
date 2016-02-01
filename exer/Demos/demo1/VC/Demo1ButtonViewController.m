@@ -155,10 +155,10 @@ typedef enum { kup = 1, kdown, kright, kleft, kzoomin, kzoomout } btntag;
             break;
     }
 
-    //    [UIView beginAnimations:nil context:nil];
-    //    self.moveView.center = center;
-    //    [UIView setAnimationDuration:2.0];
-    //    [UIView commitAnimations];
+//        [UIView beginAnimations:nil context:nil];
+//        self.moveView.center = center;
+//        [UIView setAnimationDuration:2.0];
+//        [UIView commitAnimations];
     @weakify(self);
     [UIView animateWithDuration:0.5
                      animations:^{
