@@ -72,6 +72,8 @@
 		EA818FC71C5869850084FB3E /* 57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA818F9E1C5869850084FB3E /* 57@2x.png */; };
 		EA818FC81C5869850084FB3E /* 58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA818F9F1C5869850084FB3E /* 58@2x.png */; };
 		EA818FCB1C588F630084FB3E /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA818FCA1C588F630084FB3E /* MainViewCell.m */; };
+		EAF583BF1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF583BE1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.m */; };
+		EAF583C21C5F4A9400E58AA3 /* Demo5DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF583C11C5F4A9400E58AA3 /* Demo5DrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -168,6 +170,10 @@
 		EA818FC91C588F630084FB3E /* MainViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewCell.h; sourceTree = "<group>"; };
 		EA818FCA1C588F630084FB3E /* MainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewCell.m; sourceTree = "<group>"; };
 		EA818FCD1C58935C0084FB3E /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		EAF583BD1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo5Quartz2DViewController.h; sourceTree = "<group>"; };
+		EAF583BE1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo5Quartz2DViewController.m; sourceTree = "<group>"; };
+		EAF583C01C5F4A9400E58AA3 /* Demo5DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo5DrawView.h; sourceTree = "<group>"; };
+		EAF583C11C5F4A9400E58AA3 /* Demo5DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo5DrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +208,7 @@
 		EA199E381C5EF328002CE615 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				EAF583BA1C5F49DD00E58AA3 /* demo5 */,
 				EA199E561C5F09F9002CE615 /* demo4 */,
 				EA199E4F1C5F00B1002CE615 /* demo3 */,
 				EA199E391C5EF328002CE615 /* demo1 */,
@@ -545,6 +552,33 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		EAF583BA1C5F49DD00E58AA3 /* demo5 */ = {
+			isa = PBXGroup;
+			children = (
+				EAF583BB1C5F49DD00E58AA3 /* V */,
+				EAF583BC1C5F49DD00E58AA3 /* VC */,
+			);
+			path = demo5;
+			sourceTree = "<group>";
+		};
+		EAF583BB1C5F49DD00E58AA3 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				EAF583C01C5F4A9400E58AA3 /* Demo5DrawView.h */,
+				EAF583C11C5F4A9400E58AA3 /* Demo5DrawView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		EAF583BC1C5F49DD00E58AA3 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EAF583BE1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.m */,
+				EAF583BD1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.h */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -719,6 +753,7 @@
 				EA199E551C5F018B002CE615 /* Demo3ScrollviewZoomViewController.m in Sources */,
 				EA199E4B1C5EF328002CE615 /* Demo1ButtonViewController.m in Sources */,
 				EA199E4E1C5EF328002CE615 /* ImageBrowserViewModel.m in Sources */,
+				EAF583C21C5F4A9400E58AA3 /* Demo5DrawView.m in Sources */,
 				EA815A961C585EE10084FB3E /* NSDictionary+Extension.m in Sources */,
 				EA815A381C5853A20084FB3E /* MainViewModel.m in Sources */,
 				EA70F0D41C571ED5005069EB /* AppDelegate.m in Sources */,
@@ -726,6 +761,7 @@
 				EA199E5D1C5F0A70002CE615 /* Demo4TableViewWithSectionIndexViewController.m in Sources */,
 				EA815A2A1C5762080084FB3E /* MainViewController.m in Sources */,
 				EA815A311C5762270084FB3E /* BaseNavigationController.m in Sources */,
+				EAF583BF1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.m in Sources */,
 				EA199E601C5F215C002CE615 /* Demo4Data.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -144,6 +144,12 @@
                 <key>name</key>
                 <string>demo4TableviewWithSectionIndex</string>
             </dict>
+            <dict>
+                <key>image</key>
+                <string>04</string>
+                <key>name</key>
+                <string>demo5Quartz2D</string>
+            </dict>
 		</array>
 	</dict>
 	<key>Demo2ImageBorwser</key>

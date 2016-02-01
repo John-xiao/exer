@@ -10,6 +10,7 @@
 #import "Demo2ImageBrowserViewController.h"
 #import "Demo3ScrollviewZoomViewController.h"
 #import "Demo4TableViewWithSectionIndexViewController.h"
+#import "Demo5Quartz2DViewController.h"
 #import "MainViewCell.h"
 #import "MainViewController.h"
 
@@ -65,7 +66,7 @@
 - (void)setupView {
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.right.bottom.left.mas_equalTo(self.view);
+      make.top.right.bottom.left.mas_equalTo(self.view);
     }];
 }
 
@@ -99,15 +100,21 @@
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         case 1: {
-            Demo2ImageBrowserViewController *VC= [[Demo2ImageBrowserViewController alloc] init];
+            Demo2ImageBrowserViewController *VC = [[Demo2ImageBrowserViewController alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         case 2: {
-            Demo3ScrollviewZoomViewController *VC= [[Demo3ScrollviewZoomViewController alloc] init];
+            Demo3ScrollviewZoomViewController *VC = [[Demo3ScrollviewZoomViewController alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         case 3: {
-            Demo4TableViewWithSectionIndexViewController *VC= [[Demo4TableViewWithSectionIndexViewController alloc] init];
+            Demo4TableViewWithSectionIndexViewController *VC =
+                [[Demo4TableViewWithSectionIndexViewController alloc] init];
+            [self.navigationController pushViewController:VC animated:YES];
+        } break;
+        case 4: {
+            Demo5Quartz2DViewController *VC =
+            [[Demo5Quartz2DViewController alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         default:
