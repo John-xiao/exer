@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		23C42924F1E35AECC2B3FD76 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D8646E58C3DCA013D00E8E /* libPods.a */; };
-		EA199E2E1C59C04E002CE615 /* Demo1ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E2D1C59C04E002CE615 /* Demo1ButtonViewController.m */; };
-		EA199E311C5A1A09002CE615 /* Demo2ImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E301C5A1A09002CE615 /* Demo2ImageBrowserViewController.m */; };
-		EA199E341C5A1A4E002CE615 /* ImageBrowserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E331C5A1A4E002CE615 /* ImageBrowserModel.m */; };
-		EA199E371C5A1A64002CE615 /* ImageBrowserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E361C5A1A64002CE615 /* ImageBrowserViewModel.m */; };
+		EA199E4B1C5EF328002CE615 /* Demo1ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E3E1C5EF328002CE615 /* Demo1ButtonViewController.m */; };
+		EA199E4C1C5EF328002CE615 /* ImageBrowserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E431C5EF328002CE615 /* ImageBrowserModel.m */; };
+		EA199E4D1C5EF328002CE615 /* Demo2ImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E471C5EF328002CE615 /* Demo2ImageBrowserViewController.m */; };
+		EA199E4E1C5EF328002CE615 /* ImageBrowserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E4A1C5EF328002CE615 /* ImageBrowserViewModel.m */; };
 		EA70F0D11C571ED5005069EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70F0D01C571ED5005069EB /* main.m */; };
 		EA70F0D41C571ED5005069EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70F0D31C571ED5005069EB /* AppDelegate.m */; };
 		EA70F0DC1C571ED5005069EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA70F0DB1C571ED5005069EB /* Assets.xcassets */; };
@@ -72,14 +72,14 @@
 		61D8646E58C3DCA013D00E8E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41FAF7AF2C3E24F682279AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B3D1C8C65083BD0477F1EBAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		EA199E2C1C59C04E002CE615 /* Demo1ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ButtonViewController.h; sourceTree = "<group>"; };
-		EA199E2D1C59C04E002CE615 /* Demo1ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ButtonViewController.m; sourceTree = "<group>"; };
-		EA199E2F1C5A1A09002CE615 /* Demo2ImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo2ImageBrowserViewController.h; sourceTree = "<group>"; };
-		EA199E301C5A1A09002CE615 /* Demo2ImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo2ImageBrowserViewController.m; sourceTree = "<group>"; };
-		EA199E321C5A1A4E002CE615 /* ImageBrowserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserModel.h; sourceTree = "<group>"; };
-		EA199E331C5A1A4E002CE615 /* ImageBrowserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserModel.m; sourceTree = "<group>"; };
-		EA199E351C5A1A64002CE615 /* ImageBrowserViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserViewModel.h; sourceTree = "<group>"; };
-		EA199E361C5A1A64002CE615 /* ImageBrowserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserViewModel.m; sourceTree = "<group>"; };
+		EA199E3D1C5EF328002CE615 /* Demo1ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ButtonViewController.h; sourceTree = "<group>"; };
+		EA199E3E1C5EF328002CE615 /* Demo1ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ButtonViewController.m; sourceTree = "<group>"; };
+		EA199E421C5EF328002CE615 /* ImageBrowserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserModel.h; sourceTree = "<group>"; };
+		EA199E431C5EF328002CE615 /* ImageBrowserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserModel.m; sourceTree = "<group>"; };
+		EA199E461C5EF328002CE615 /* Demo2ImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo2ImageBrowserViewController.h; sourceTree = "<group>"; };
+		EA199E471C5EF328002CE615 /* Demo2ImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo2ImageBrowserViewController.m; sourceTree = "<group>"; };
+		EA199E491C5EF328002CE615 /* ImageBrowserViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserViewModel.h; sourceTree = "<group>"; };
+		EA199E4A1C5EF328002CE615 /* ImageBrowserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserViewModel.m; sourceTree = "<group>"; };
 		EA70F0CC1C571ED5005069EB /* exer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA70F0D01C571ED5005069EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA70F0D21C571ED5005069EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -182,6 +182,101 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EA199E381C5EF328002CE615 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				EA199E391C5EF328002CE615 /* demo1 */,
+				EA199E401C5EF328002CE615 /* demo2 */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		EA199E391C5EF328002CE615 /* demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				EA199E3A1C5EF328002CE615 /* M */,
+				EA199E3B1C5EF328002CE615 /* V */,
+				EA199E3C1C5EF328002CE615 /* VC */,
+				EA199E3F1C5EF328002CE615 /* VM */,
+			);
+			path = demo1;
+			sourceTree = "<group>";
+		};
+		EA199E3A1C5EF328002CE615 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		EA199E3B1C5EF328002CE615 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		EA199E3C1C5EF328002CE615 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EA199E3D1C5EF328002CE615 /* Demo1ButtonViewController.h */,
+				EA199E3E1C5EF328002CE615 /* Demo1ButtonViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EA199E3F1C5EF328002CE615 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		EA199E401C5EF328002CE615 /* demo2 */ = {
+			isa = PBXGroup;
+			children = (
+				EA199E411C5EF328002CE615 /* M */,
+				EA199E441C5EF328002CE615 /* V */,
+				EA199E451C5EF328002CE615 /* VC */,
+				EA199E481C5EF328002CE615 /* VM */,
+			);
+			path = demo2;
+			sourceTree = "<group>";
+		};
+		EA199E411C5EF328002CE615 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				EA199E421C5EF328002CE615 /* ImageBrowserModel.h */,
+				EA199E431C5EF328002CE615 /* ImageBrowserModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		EA199E441C5EF328002CE615 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		EA199E451C5EF328002CE615 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EA199E461C5EF328002CE615 /* Demo2ImageBrowserViewController.h */,
+				EA199E471C5EF328002CE615 /* Demo2ImageBrowserViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EA199E481C5EF328002CE615 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				EA199E491C5EF328002CE615 /* ImageBrowserViewModel.h */,
+				EA199E4A1C5EF328002CE615 /* ImageBrowserViewModel.m */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
 		EA70F0C31C571ED5005069EB = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +298,7 @@
 		EA70F0CE1C571ED5005069EB /* exer */ = {
 			isa = PBXGroup;
 			children = (
+				EA199E381C5EF328002CE615 /* Demos */,
 				EA815A3B1C5855EB0084FB3E /* Resource */,
 				EA815A2B1C5762270084FB3E /* CustomFramework */,
 				EA815A251C5762080084FB3E /* Controllers */,
@@ -232,10 +328,6 @@
 			children = (
 				EA815A261C5762080084FB3E /* MainViewController.h */,
 				EA815A271C5762080084FB3E /* MainViewController.m */,
-				EA199E2C1C59C04E002CE615 /* Demo1ButtonViewController.h */,
-				EA199E2D1C59C04E002CE615 /* Demo1ButtonViewController.m */,
-				EA199E2F1C5A1A09002CE615 /* Demo2ImageBrowserViewController.h */,
-				EA199E301C5A1A09002CE615 /* Demo2ImageBrowserViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -256,10 +348,6 @@
 				EA815A341C5853190084FB3E /* MainMenuModel.m */,
 				EA815A361C5853A20084FB3E /* MainViewModel.h */,
 				EA815A371C5853A20084FB3E /* MainViewModel.m */,
-				EA199E321C5A1A4E002CE615 /* ImageBrowserModel.h */,
-				EA199E331C5A1A4E002CE615 /* ImageBrowserModel.m */,
-				EA199E351C5A1A64002CE615 /* ImageBrowserViewModel.h */,
-				EA199E361C5A1A64002CE615 /* ImageBrowserViewModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -535,16 +623,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA199E4D1C5EF328002CE615 /* Demo2ImageBrowserViewController.m in Sources */,
 				EA815A971C585EE10084FB3E /* NSMutableDictionary+Extension.m in Sources */,
 				EA815A321C5762270084FB3E /* BaseViewController.m in Sources */,
-				EA199E341C5A1A4E002CE615 /* ImageBrowserModel.m in Sources */,
+				EA199E4C1C5EF328002CE615 /* ImageBrowserModel.m in Sources */,
 				EA815A351C5853190084FB3E /* MainMenuModel.m in Sources */,
 				EA818FCB1C588F630084FB3E /* MainViewCell.m in Sources */,
-				EA199E2E1C59C04E002CE615 /* Demo1ButtonViewController.m in Sources */,
+				EA199E4B1C5EF328002CE615 /* Demo1ButtonViewController.m in Sources */,
+				EA199E4E1C5EF328002CE615 /* ImageBrowserViewModel.m in Sources */,
 				EA815A961C585EE10084FB3E /* NSDictionary+Extension.m in Sources */,
-				EA199E371C5A1A64002CE615 /* ImageBrowserViewModel.m in Sources */,
 				EA815A381C5853A20084FB3E /* MainViewModel.m in Sources */,
-				EA199E311C5A1A09002CE615 /* Demo2ImageBrowserViewController.m in Sources */,
 				EA70F0D41C571ED5005069EB /* AppDelegate.m in Sources */,
 				EA70F0D11C571ED5005069EB /* main.m in Sources */,
 				EA815A2A1C5762080084FB3E /* MainViewController.m in Sources */,
