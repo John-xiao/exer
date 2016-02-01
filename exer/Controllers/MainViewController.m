@@ -9,6 +9,7 @@
 #import "Demo1ButtonViewController.h"
 #import "Demo2ImageBrowserViewController.h"
 #import "Demo3ScrollviewZoomViewController.h"
+#import "Demo4TableViewWithSectionIndexViewController.h"
 #import "MainViewCell.h"
 #import "MainViewController.h"
 
@@ -63,6 +64,9 @@
 
 - (void)setupView {
     [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.right.bottom.left.mas_equalTo(self.view);
+    }];
 }
 
 #pragma mark TableView DataSource
@@ -72,7 +76,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID_MAINVIEW forIndexPath:indexPath];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [self configureCell:(MainViewCell *)cell atIndexPath:indexPath];
     return cell;
 }
@@ -101,6 +104,10 @@
         } break;
         case 2: {
             Demo3ScrollviewZoomViewController *VC= [[Demo3ScrollviewZoomViewController alloc] init];
+            [self.navigationController pushViewController:VC animated:YES];
+        } break;
+        case 3: {
+            Demo4TableViewWithSectionIndexViewController *VC= [[Demo4TableViewWithSectionIndexViewController alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         default:

@@ -14,6 +14,10 @@
 		EA199E4E1C5EF328002CE615 /* ImageBrowserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E4A1C5EF328002CE615 /* ImageBrowserViewModel.m */; };
 		EA199E521C5F015C002CE615 /* background001@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA199E511C5F015C002CE615 /* background001@2x.png */; };
 		EA199E551C5F018B002CE615 /* Demo3ScrollviewZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E541C5F018B002CE615 /* Demo3ScrollviewZoomViewController.m */; };
+		EA199E5D1C5F0A70002CE615 /* Demo4TableViewWithSectionIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E5C1C5F0A70002CE615 /* Demo4TableViewWithSectionIndexViewController.m */; };
+		EA199E601C5F215C002CE615 /* Demo4Data.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E5F1C5F215C002CE615 /* Demo4Data.m */; };
+		EA199E631C5F2202002CE615 /* Demo4ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E621C5F2202002CE615 /* Demo4ViewModel.m */; };
+		EA199E661C5F28D7002CE615 /* Demo4Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA199E651C5F28D7002CE615 /* Demo4Cell.m */; };
 		EA70F0D11C571ED5005069EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70F0D01C571ED5005069EB /* main.m */; };
 		EA70F0D41C571ED5005069EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA70F0D31C571ED5005069EB /* AppDelegate.m */; };
 		EA70F0DC1C571ED5005069EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA70F0DB1C571ED5005069EB /* Assets.xcassets */; };
@@ -85,6 +89,14 @@
 		EA199E511C5F015C002CE615 /* background001@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background001@2x.png"; sourceTree = "<group>"; };
 		EA199E531C5F018B002CE615 /* Demo3ScrollviewZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3ScrollviewZoomViewController.h; sourceTree = "<group>"; };
 		EA199E541C5F018B002CE615 /* Demo3ScrollviewZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3ScrollviewZoomViewController.m; sourceTree = "<group>"; };
+		EA199E5B1C5F0A70002CE615 /* Demo4TableViewWithSectionIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4TableViewWithSectionIndexViewController.h; sourceTree = "<group>"; };
+		EA199E5C1C5F0A70002CE615 /* Demo4TableViewWithSectionIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4TableViewWithSectionIndexViewController.m; sourceTree = "<group>"; };
+		EA199E5E1C5F215C002CE615 /* Demo4Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4Data.h; sourceTree = "<group>"; };
+		EA199E5F1C5F215C002CE615 /* Demo4Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4Data.m; sourceTree = "<group>"; };
+		EA199E611C5F2202002CE615 /* Demo4ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4ViewModel.h; sourceTree = "<group>"; };
+		EA199E621C5F2202002CE615 /* Demo4ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4ViewModel.m; sourceTree = "<group>"; };
+		EA199E641C5F28D7002CE615 /* Demo4Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4Cell.h; sourceTree = "<group>"; };
+		EA199E651C5F28D7002CE615 /* Demo4Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4Cell.m; sourceTree = "<group>"; };
 		EA70F0CC1C571ED5005069EB /* exer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA70F0D01C571ED5005069EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA70F0D21C571ED5005069EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -190,6 +202,7 @@
 		EA199E381C5EF328002CE615 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				EA199E561C5F09F9002CE615 /* demo4 */,
 				EA199E4F1C5F00B1002CE615 /* demo3 */,
 				EA199E391C5EF328002CE615 /* demo1 */,
 				EA199E401C5EF328002CE615 /* demo2 */,
@@ -298,6 +311,53 @@
 				EA199E541C5F018B002CE615 /* Demo3ScrollviewZoomViewController.m */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		EA199E561C5F09F9002CE615 /* demo4 */ = {
+			isa = PBXGroup;
+			children = (
+				EA199E571C5F09F9002CE615 /* M */,
+				EA199E581C5F09F9002CE615 /* V */,
+				EA199E591C5F09F9002CE615 /* VC */,
+				EA199E5A1C5F09F9002CE615 /* VM */,
+			);
+			path = demo4;
+			sourceTree = "<group>";
+		};
+		EA199E571C5F09F9002CE615 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				EA199E5E1C5F215C002CE615 /* Demo4Data.h */,
+				EA199E5F1C5F215C002CE615 /* Demo4Data.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		EA199E581C5F09F9002CE615 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				EA199E641C5F28D7002CE615 /* Demo4Cell.h */,
+				EA199E651C5F28D7002CE615 /* Demo4Cell.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		EA199E591C5F09F9002CE615 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EA199E5B1C5F0A70002CE615 /* Demo4TableViewWithSectionIndexViewController.h */,
+				EA199E5C1C5F0A70002CE615 /* Demo4TableViewWithSectionIndexViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EA199E5A1C5F09F9002CE615 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				EA199E611C5F2202002CE615 /* Demo4ViewModel.h */,
+				EA199E621C5F2202002CE615 /* Demo4ViewModel.m */,
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 		EA70F0C31C571ED5005069EB = {
@@ -648,10 +708,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA199E661C5F28D7002CE615 /* Demo4Cell.m in Sources */,
 				EA199E4D1C5EF328002CE615 /* Demo2ImageBrowserViewController.m in Sources */,
 				EA815A971C585EE10084FB3E /* NSMutableDictionary+Extension.m in Sources */,
 				EA815A321C5762270084FB3E /* BaseViewController.m in Sources */,
 				EA199E4C1C5EF328002CE615 /* ImageBrowserModel.m in Sources */,
+				EA199E631C5F2202002CE615 /* Demo4ViewModel.m in Sources */,
 				EA815A351C5853190084FB3E /* MainMenuModel.m in Sources */,
 				EA818FCB1C588F630084FB3E /* MainViewCell.m in Sources */,
 				EA199E551C5F018B002CE615 /* Demo3ScrollviewZoomViewController.m in Sources */,
@@ -661,8 +723,10 @@
 				EA815A381C5853A20084FB3E /* MainViewModel.m in Sources */,
 				EA70F0D41C571ED5005069EB /* AppDelegate.m in Sources */,
 				EA70F0D11C571ED5005069EB /* main.m in Sources */,
+				EA199E5D1C5F0A70002CE615 /* Demo4TableViewWithSectionIndexViewController.m in Sources */,
 				EA815A2A1C5762080084FB3E /* MainViewController.m in Sources */,
 				EA815A311C5762270084FB3E /* BaseNavigationController.m in Sources */,
+				EA199E601C5F215C002CE615 /* Demo4Data.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
