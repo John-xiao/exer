@@ -12,6 +12,7 @@
 #import "Demo4TableViewWithSectionIndexViewController.h"
 #import "Demo5Quartz2DViewController.h"
 #import "Demo6CalayerSimpleTestViewController.h"
+#import "Demo7BaseAnimationViewController.h"
 #import "MainViewCell.h"
 #import "MainViewController.h"
 
@@ -121,6 +122,11 @@
         case 5: {
             Demo6CalayerSimpleTestViewController *VC =
             [[Demo6CalayerSimpleTestViewController alloc] init];
+            [self.navigationController pushViewController:VC animated:YES];
+        } break;
+        case 6: {
+            Demo7BaseAnimationViewController *VC =
+            [[Demo7BaseAnimationViewController alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         default:
