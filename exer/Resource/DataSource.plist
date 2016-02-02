@@ -150,6 +150,12 @@
                 <key>name</key>
                 <string>demo5Quartz2D</string>
             </dict>
+            <dict>
+                <key>image</key>
+                <string>05</string>
+                <key>name</key>
+                <string>demo6CalayerSimpleTest</string>
+            </dict>
 		</array>
 	</dict>
 	<key>Demo2ImageBorwser</key>

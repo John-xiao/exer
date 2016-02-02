@@ -11,6 +11,7 @@
 #import "Demo3ScrollviewZoomViewController.h"
 #import "Demo4TableViewWithSectionIndexViewController.h"
 #import "Demo5Quartz2DViewController.h"
+#import "Demo6CalayerSimpleTestViewController.h"
 #import "MainViewCell.h"
 #import "MainViewController.h"
 
@@ -115,6 +116,11 @@
         case 4: {
             Demo5Quartz2DViewController *VC =
             [[Demo5Quartz2DViewController alloc] init];
+            [self.navigationController pushViewController:VC animated:YES];
+        } break;
+        case 5: {
+            Demo6CalayerSimpleTestViewController *VC =
+            [[Demo6CalayerSimpleTestViewController alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         default:
