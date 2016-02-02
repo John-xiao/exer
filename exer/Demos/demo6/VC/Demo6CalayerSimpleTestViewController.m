@@ -11,6 +11,7 @@
 @interface Demo6CalayerSimpleTestViewController ()
 @property(nonatomic, strong) UIView *displayView;
 @property (nonatomic,strong) UIImageView *displayImage;
+@property (nonatomic,strong) CALayer *layer;
 @end
 
 @implementation Demo6CalayerSimpleTestViewController
@@ -28,6 +29,13 @@
         _displayImage.backgroundColor = [UIColor redColor];
     }
     return _displayImage;
+}
+
+-(CALayer *)layer{
+    if (!_layer) {
+        _layer = [CALayer layer];
+    }
+    return _layer;
 }
 
 - (void)viewDidLoad {
@@ -73,6 +81,31 @@
     self.displayImage.layer.transform = CATransform3DMakeRotation(M_PI_4, 1, 1, 0.5);
     
     
+//position layer出现在父layer中的坐标
+//anchor layer自身那个点在position上，取值范围是0~1
+    self.layer.backgroundColor = [UIColor redColor].CGColor;
+    self.layer.bounds = CGRectMake(0, 0, 100, 100);
+    self.layer.position = CGPointMake(100, 100);
+    self.layer.anchorPoint = CGPointMake(0.5, 0.5);
+    [self.view.layer addSublayer:self.layer];
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    self.layer.bounds = CGRectMake(0, 0, 200, 200);;
+    self.layer.backgroundColor = [UIColor brownColor].CGColor;
+}
+
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    self.layer.bounds = CGRectMake(0, 0, 100, 100);
+    self.layer.backgroundColor = [UIColor redColor].CGColor;
+}
+
+-(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"touches move");
+}
+
+-(void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"touches cancel");
 }
 /*
 #pragma mark - Navigation
