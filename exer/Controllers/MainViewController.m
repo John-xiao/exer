@@ -13,6 +13,7 @@
 #import "Demo5Quartz2DViewController.h"
 #import "Demo6CalayerSimpleTestViewController.h"
 #import "Demo7BaseAnimationViewController.h"
+#import "Demo8KeyframeAnimationViewController.h"
 #import "MainViewCell.h"
 #import "MainViewController.h"
 
@@ -115,18 +116,19 @@
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         case 4: {
-            Demo5Quartz2DViewController *VC =
-            [[Demo5Quartz2DViewController alloc] init];
+            Demo5Quartz2DViewController *VC = [[Demo5Quartz2DViewController alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         case 5: {
-            Demo6CalayerSimpleTestViewController *VC =
-            [[Demo6CalayerSimpleTestViewController alloc] init];
+            Demo6CalayerSimpleTestViewController *VC = [[Demo6CalayerSimpleTestViewController alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         case 6: {
-            Demo7BaseAnimationViewController *VC =
-            [[Demo7BaseAnimationViewController alloc] init];
+            Demo7BaseAnimationViewController *VC = [[Demo7BaseAnimationViewController alloc] init];
+            [self.navigationController pushViewController:VC animated:YES];
+        } break;
+        case 7: {
+            Demo8KeyframeAnimationViewController *VC = [[Demo8KeyframeAnimationViewController alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         default:

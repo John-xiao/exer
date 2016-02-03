@@ -76,6 +76,7 @@
 		EAF583C21C5F4A9400E58AA3 /* Demo5DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF583C11C5F4A9400E58AA3 /* Demo5DrawView.m */; };
 		EAF583C71C6046C600E58AA3 /* Demo6CalayerSimpleTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF583C61C6046C600E58AA3 /* Demo6CalayerSimpleTestViewController.m */; };
 		EAF583CC1C6091D800E58AA3 /* Demo7BaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF583CB1C6091D800E58AA3 /* Demo7BaseAnimationViewController.m */; };
+		EAF583D11C609FA900E58AA3 /* Demo8KeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF583D01C609FA900E58AA3 /* Demo8KeyframeAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -180,6 +181,8 @@
 		EAF583C61C6046C600E58AA3 /* Demo6CalayerSimpleTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo6CalayerSimpleTestViewController.m; sourceTree = "<group>"; };
 		EAF583CA1C6091D800E58AA3 /* Demo7BaseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo7BaseAnimationViewController.h; sourceTree = "<group>"; };
 		EAF583CB1C6091D800E58AA3 /* Demo7BaseAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo7BaseAnimationViewController.m; sourceTree = "<group>"; };
+		EAF583CF1C609FA900E58AA3 /* Demo8KeyframeAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo8KeyframeAnimationViewController.h; sourceTree = "<group>"; };
+		EAF583D01C609FA900E58AA3 /* Demo8KeyframeAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo8KeyframeAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +217,7 @@
 		EA199E381C5EF328002CE615 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				EAF583CD1C609FA900E58AA3 /* demo8 */,
 				EAF583C81C60868800E58AA3 /* demo7 */,
 				EAF583C31C60468800E58AA3 /* demo6 */,
 				EAF583BA1C5F49DD00E58AA3 /* demo5 */,
@@ -621,6 +625,23 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		EAF583CD1C609FA900E58AA3 /* demo8 */ = {
+			isa = PBXGroup;
+			children = (
+				EAF583CE1C609FA900E58AA3 /* VC */,
+			);
+			path = demo8;
+			sourceTree = "<group>";
+		};
+		EAF583CE1C609FA900E58AA3 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EAF583CF1C609FA900E58AA3 /* Demo8KeyframeAnimationViewController.h */,
+				EAF583D01C609FA900E58AA3 /* Demo8KeyframeAnimationViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -801,6 +822,7 @@
 				EA815A381C5853A20084FB3E /* MainViewModel.m in Sources */,
 				EA70F0D41C571ED5005069EB /* AppDelegate.m in Sources */,
 				EA70F0D11C571ED5005069EB /* main.m in Sources */,
+				EAF583D11C609FA900E58AA3 /* Demo8KeyframeAnimationViewController.m in Sources */,
 				EA199E5D1C5F0A70002CE615 /* Demo4TableViewWithSectionIndexViewController.m in Sources */,
 				EA815A2A1C5762080084FB3E /* MainViewController.m in Sources */,
 				EA815A311C5762270084FB3E /* BaseNavigationController.m in Sources */,
