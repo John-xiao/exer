@@ -21,7 +21,7 @@
 
 - (void)setupView {
     self.icon = [[UIImageView alloc] init];
-    self.icon.backgroundColor = [UIColor greenColor];
+    self.icon.backgroundColor = [UIColor blackColor];
     self.icon.contentMode = UIViewContentModeScaleToFill;
 
     self.name = [[UILabel alloc] init];

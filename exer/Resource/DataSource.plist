@@ -168,6 +168,12 @@
                 <key>name</key>
                 <string>demo8KeyframeAnimation</string>
             </dict>
+            <dict>
+                <key>image</key>
+                <string>09</string>
+                <key>name</key>
+                <string>demo9Transition</string>
+            </dict>
 		</array>
 	</dict>
 	<key>Demo2ImageBorwser</key>

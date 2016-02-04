@@ -72,6 +72,7 @@
 		EA818FC71C5869850084FB3E /* 57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA818F9E1C5869850084FB3E /* 57@2x.png */; };
 		EA818FC81C5869850084FB3E /* 58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA818F9F1C5869850084FB3E /* 58@2x.png */; };
 		EA818FCB1C588F630084FB3E /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA818FCA1C588F630084FB3E /* MainViewCell.m */; };
+		EACBB7831C61CAC50024EDDF /* Demo9CATransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EACBB7821C61CAC50024EDDF /* Demo9CATransitionViewController.m */; };
 		EAF583BF1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF583BE1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.m */; };
 		EAF583C21C5F4A9400E58AA3 /* Demo5DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF583C11C5F4A9400E58AA3 /* Demo5DrawView.m */; };
 		EAF583C71C6046C600E58AA3 /* Demo6CalayerSimpleTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF583C61C6046C600E58AA3 /* Demo6CalayerSimpleTestViewController.m */; };
@@ -173,6 +174,8 @@
 		EA818FC91C588F630084FB3E /* MainViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewCell.h; sourceTree = "<group>"; };
 		EA818FCA1C588F630084FB3E /* MainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewCell.m; sourceTree = "<group>"; };
 		EA818FCD1C58935C0084FB3E /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		EACBB7811C61CAC50024EDDF /* Demo9CATransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo9CATransitionViewController.h; sourceTree = "<group>"; };
+		EACBB7821C61CAC50024EDDF /* Demo9CATransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo9CATransitionViewController.m; sourceTree = "<group>"; };
 		EAF583BD1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo5Quartz2DViewController.h; sourceTree = "<group>"; };
 		EAF583BE1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo5Quartz2DViewController.m; sourceTree = "<group>"; };
 		EAF583C01C5F4A9400E58AA3 /* Demo5DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo5DrawView.h; sourceTree = "<group>"; };
@@ -217,6 +220,7 @@
 		EA199E381C5EF328002CE615 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				EACBB77F1C61CAA20024EDDF /* demo9 */,
 				EAF583CD1C609FA900E58AA3 /* demo8 */,
 				EAF583C81C60868800E58AA3 /* demo7 */,
 				EAF583C31C60468800E58AA3 /* demo6 */,
@@ -564,6 +568,23 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		EACBB77F1C61CAA20024EDDF /* demo9 */ = {
+			isa = PBXGroup;
+			children = (
+				EACBB7801C61CAA20024EDDF /* VC */,
+			);
+			path = demo9;
+			sourceTree = "<group>";
+		};
+		EACBB7801C61CAA20024EDDF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EACBB7811C61CAC50024EDDF /* Demo9CATransitionViewController.h */,
+				EACBB7821C61CAC50024EDDF /* Demo9CATransitionViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		EAF583BA1C5F49DD00E58AA3 /* demo5 */ = {
 			isa = PBXGroup;
 			children = (
@@ -813,6 +834,7 @@
 				EA199E631C5F2202002CE615 /* Demo4ViewModel.m in Sources */,
 				EA815A351C5853190084FB3E /* MainMenuModel.m in Sources */,
 				EA818FCB1C588F630084FB3E /* MainViewCell.m in Sources */,
+				EACBB7831C61CAC50024EDDF /* Demo9CATransitionViewController.m in Sources */,
 				EA199E551C5F018B002CE615 /* Demo3ScrollviewZoomViewController.m in Sources */,
 				EAF583C71C6046C600E58AA3 /* Demo6CalayerSimpleTestViewController.m in Sources */,
 				EA199E4B1C5EF328002CE615 /* Demo1ButtonViewController.m in Sources */,
