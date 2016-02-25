@@ -180,6 +180,12 @@
                 <key>name</key>
                 <string>demo10FMDB</string>
             </dict>
+            <dict>
+                <key>image</key>
+                <string>11</string>
+                <key>name</key>
+                <string>demo11CarouselByCollectionView</string>
+            </dict>
 		</array>
 	</dict>
 	<key>Demo2ImageBorwser</key>

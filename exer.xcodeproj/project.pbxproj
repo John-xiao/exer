@@ -73,6 +73,8 @@
 		EA818FC81C5869850084FB3E /* 58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA818F9F1C5869850084FB3E /* 58@2x.png */; };
 		EA818FCB1C588F630084FB3E /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA818FCA1C588F630084FB3E /* MainViewCell.m */; };
 		EAA9C0BA1C7D72BE00D1037C /* Demo10FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9C0B91C7D72BE00D1037C /* Demo10FMDBViewController.m */; };
+		EAA9C0C21C7ECEE000D1037C /* Demo11CarouselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9C0C11C7ECEE000D1037C /* Demo11CarouselViewController.m */; };
+		EAA9C0C51C7ED43E00D1037C /* Demo11CarouselCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9C0C41C7ED43E00D1037C /* Demo11CarouselCell.m */; };
 		EACBB7831C61CAC50024EDDF /* Demo9CATransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EACBB7821C61CAC50024EDDF /* Demo9CATransitionViewController.m */; };
 		EAF583BF1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF583BE1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.m */; };
 		EAF583C21C5F4A9400E58AA3 /* Demo5DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF583C11C5F4A9400E58AA3 /* Demo5DrawView.m */; };
@@ -177,6 +179,10 @@
 		EA818FCD1C58935C0084FB3E /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		EAA9C0B81C7D72BE00D1037C /* Demo10FMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo10FMDBViewController.h; sourceTree = "<group>"; };
 		EAA9C0B91C7D72BE00D1037C /* Demo10FMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo10FMDBViewController.m; sourceTree = "<group>"; };
+		EAA9C0C01C7ECEE000D1037C /* Demo11CarouselViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo11CarouselViewController.h; sourceTree = "<group>"; };
+		EAA9C0C11C7ECEE000D1037C /* Demo11CarouselViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo11CarouselViewController.m; sourceTree = "<group>"; };
+		EAA9C0C31C7ED43E00D1037C /* Demo11CarouselCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo11CarouselCell.h; sourceTree = "<group>"; };
+		EAA9C0C41C7ED43E00D1037C /* Demo11CarouselCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo11CarouselCell.m; sourceTree = "<group>"; };
 		EACBB7811C61CAC50024EDDF /* Demo9CATransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo9CATransitionViewController.h; sourceTree = "<group>"; };
 		EACBB7821C61CAC50024EDDF /* Demo9CATransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo9CATransitionViewController.m; sourceTree = "<group>"; };
 		EAF583BD1C5F4A3700E58AA3 /* Demo5Quartz2DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo5Quartz2DViewController.h; sourceTree = "<group>"; };
@@ -223,6 +229,7 @@
 		EA199E381C5EF328002CE615 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				EAA9C0BB1C7EAD4D00D1037C /* demo11 */,
 				EAA9C0B61C7D57A400D1037C /* demo10 */,
 				EACBB77F1C61CAA20024EDDF /* demo9 */,
 				EAF583CD1C609FA900E58AA3 /* demo8 */,
@@ -589,6 +596,49 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		EAA9C0BB1C7EAD4D00D1037C /* demo11 */ = {
+			isa = PBXGroup;
+			children = (
+				EAA9C0BC1C7EAD4D00D1037C /* M */,
+				EAA9C0BD1C7EAD4D00D1037C /* V */,
+				EAA9C0BE1C7EAD4D00D1037C /* VC */,
+				EAA9C0BF1C7EAD4D00D1037C /* VM */,
+			);
+			path = demo11;
+			sourceTree = "<group>";
+		};
+		EAA9C0BC1C7EAD4D00D1037C /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		EAA9C0BD1C7EAD4D00D1037C /* V */ = {
+			isa = PBXGroup;
+			children = (
+				EAA9C0C31C7ED43E00D1037C /* Demo11CarouselCell.h */,
+				EAA9C0C41C7ED43E00D1037C /* Demo11CarouselCell.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		EAA9C0BE1C7EAD4D00D1037C /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EAA9C0C01C7ECEE000D1037C /* Demo11CarouselViewController.h */,
+				EAA9C0C11C7ECEE000D1037C /* Demo11CarouselViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EAA9C0BF1C7EAD4D00D1037C /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
 		EACBB77F1C61CAA20024EDDF /* demo9 */ = {
 			isa = PBXGroup;
 			children = (
@@ -852,8 +902,10 @@
 				EA815A971C585EE10084FB3E /* NSMutableDictionary+Extension.m in Sources */,
 				EA815A321C5762270084FB3E /* BaseViewController.m in Sources */,
 				EA199E4C1C5EF328002CE615 /* ImageBrowserModel.m in Sources */,
+				EAA9C0C21C7ECEE000D1037C /* Demo11CarouselViewController.m in Sources */,
 				EA199E631C5F2202002CE615 /* Demo4ViewModel.m in Sources */,
 				EA815A351C5853190084FB3E /* MainMenuModel.m in Sources */,
+				EAA9C0C51C7ED43E00D1037C /* Demo11CarouselCell.m in Sources */,
 				EAA9C0BA1C7D72BE00D1037C /* Demo10FMDBViewController.m in Sources */,
 				EA818FCB1C588F630084FB3E /* MainViewCell.m in Sources */,
 				EACBB7831C61CAC50024EDDF /* Demo9CATransitionViewController.m in Sources */,

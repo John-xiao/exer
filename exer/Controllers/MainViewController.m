@@ -16,6 +16,7 @@
 #import "Demo8KeyframeAnimationViewController.h"
 #import "Demo9CATransitionViewController.h"
 #import "Demo10FMDBViewController.h"
+#import "Demo11CarouselViewController.h"
 #import "MainViewCell.h"
 #import "MainViewController.h"
 
@@ -75,7 +76,7 @@
     }];
 }
 
-#pragma mark TableView DataSource
+#pragma mark - TableView DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.viewModel.demos.count;
 }
@@ -92,7 +93,7 @@
     [cell.icon setImage:[UIImage imageNamed:data.image]];
 }
 
-#pragma mark TableView Delegate
+#pragma mark - TableView Delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80;
 }
@@ -139,6 +140,10 @@
         } break;
         case 9: {
             Demo10FMDBViewController *VC = [[Demo10FMDBViewController alloc] init];
+            [self.navigationController pushViewController:VC animated:YES];
+        } break;
+        case 10: {
+            Demo11CarouselViewController *VC = [[Demo11CarouselViewController alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         default:
