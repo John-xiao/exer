@@ -15,6 +15,7 @@
 #import "Demo7BaseAnimationViewController.h"
 #import "Demo8KeyframeAnimationViewController.h"
 #import "Demo9CATransitionViewController.h"
+#import "Demo10FMDBViewController.h"
 #import "MainViewCell.h"
 #import "MainViewController.h"
 
@@ -134,6 +135,10 @@
         } break;
         case 8: {
             Demo9CATransitionViewController *VC = [[Demo9CATransitionViewController alloc] init];
+            [self.navigationController pushViewController:VC animated:YES];
+        } break;
+        case 9: {
+            Demo10FMDBViewController *VC = [[Demo10FMDBViewController alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         } break;
         default:
