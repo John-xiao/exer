@@ -27,7 +27,6 @@
 		EA815A321C5762270084FB3E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA815A301C5762270084FB3E /* BaseViewController.m */; };
 		EA815A351C5853190084FB3E /* MainMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA815A341C5853190084FB3E /* MainMenuModel.m */; };
 		EA815A381C5853A20084FB3E /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA815A371C5853A20084FB3E /* MainViewModel.m */; };
-		EA815A3D1C5855EB0084FB3E /* DataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA815A3C1C5855EB0084FB3E /* DataSource.plist */; };
 		EA815A961C585EE10084FB3E /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EA815A931C585EE10084FB3E /* NSDictionary+Extension.m */; };
 		EA815A971C585EE10084FB3E /* NSMutableDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EA815A951C585EE10084FB3E /* NSMutableDictionary+Extension.m */; };
 		EA818FA01C5869850084FB3E /* 08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA818F771C5869850084FB3E /* 08@2x.png */; };
@@ -123,7 +122,6 @@
 		EA815A341C5853190084FB3E /* MainMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuModel.m; sourceTree = "<group>"; };
 		EA815A361C5853A20084FB3E /* MainViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewModel.h; sourceTree = "<group>"; };
 		EA815A371C5853A20084FB3E /* MainViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewModel.m; sourceTree = "<group>"; };
-		EA815A3C1C5855EB0084FB3E /* DataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataSource.plist; sourceTree = "<group>"; };
 		EA815A921C585EE10084FB3E /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
 		EA815A931C585EE10084FB3E /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		EA815A941C585EE10084FB3E /* NSMutableDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Extension.h"; sourceTree = "<group>"; };
@@ -496,7 +494,6 @@
 			isa = PBXGroup;
 			children = (
 				EA815A981C585F900084FB3E /* Image */,
-				EA815A3C1C5855EB0084FB3E /* DataSource.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -837,7 +834,6 @@
 				EA818FA31C5869850084FB3E /* 02@2x.png in Resources */,
 				EA818FB51C5869850084FB3E /* 21@2x.png in Resources */,
 				EA818FBA1C5869850084FB3E /* 26@2x.png in Resources */,
-				EA815A3D1C5855EB0084FB3E /* DataSource.plist in Resources */,
 				EA818FC41C5869850084FB3E /* 54@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
